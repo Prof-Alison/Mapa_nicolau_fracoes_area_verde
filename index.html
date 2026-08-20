@@ -73,6 +73,12 @@
     #proximo:hover {
       background: #0096c7;
     }
+    .imagem-destino {
+  max-width: 100%;   /* nunca ultrapassa a largura da página */
+  height: auto;      /* mantém a proporção */
+  border-radius: 10px; /* opcional: cantos arredondados */
+}
+
   </style>
 </head>
 <body>
@@ -140,7 +146,7 @@
 
     function mostrarDestino() {
       document.getElementById("resultado").innerHTML = 
-  "<img src='Movimento/verde.png' alt='Destino' width='600'>";
+  "<img src='Movimento/verde.png' alt='Destino' class='imagem-destino'>"
       document.getElementById("proximo").style.display = "none";
     }
 
